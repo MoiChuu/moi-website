@@ -1,0 +1,27 @@
+/* player-btn-vertical.css */
+
+/* 橫向頁面播放按鈕樣式 */
+.glass-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  writing-mode: horizontal-tb;
+  width: 50px;
+  height: 50px;
+  color: #000;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-size: 20pt;
+  padding: 30px;
+  border-radius: 50%;
+  cursor: url('../images/Moi-Cursor-3.png'), auto;
+}
+
+/* 浮動播放器位置 */
+.floating-player {
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 9999;
+}

@@ -1,0 +1,72 @@
+/* vertical.css */
+
+/* 匯入字型 */
+@import url('./fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
+
+/* 定義橫向頁面樣式 */
+body {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: '源起明體 月', 'Noto Serif TC', 'Times New Roman', serif;
+    font-weight: 400;
+    color: #999;
+    background-color: #0c0c0e;
+    line-height: 2;
+    font-size: 18px;
+    cursor: url('../images/Moi-Cursor-1.png'), auto;
+}
+
+html, body {
+    margin: 0;
+    padding: 20px;
+    width: auto;
+    height: 800px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+html{
+    scrollbar-face-color: rgba(120, 53, 53, 0.5);
+    scrollbar-3dlight-color: rgba(120, 53, 53, 0.5);
+    scrollbar-track-color: rgba(120, 53, 53, 0.5);
+    scrollbar-darkshadow-color: rgba(120, 53, 53, 0.5);
+    scrollbar-highlight-color: #000000;
+    scrollbar-shadow-color: #000000;
+    scrollbar-arrow-color: #000000;
+}
+
+::-webkit-scrollbar {width: 0px; height: 5px;}
+::-webkit-scrollbar-track, 
+::-webkit-scrollbar-button, 
+::-webkit-scrollbar-corner {background-color: rgba(120, 53, 53, 0.5);}
+::-webkit-scrollbar-button, 
+::-webkit-scrollbar-corner {width: 0px;}
+::-webkit-scrollbar-thumb {background-color: #783535; border-radius: 10px 10px 0 0;}
+::-webkit-scrollbar-thumb:hover {background-color: #FFF;}
+
+a {
+    color: #d9ac9a;
+    text-decoration: none;
+    transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+}
+
+a:hover {
+    color: #FFF;
+    text-decoration: none;
+    cursor: url('../images/Moi-Cursor-2.png'), auto;
+    transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+}
+
+h1 {
+    color: #552f74;
+    font-family: '獅尾尖腿黑體', 'Noto Sans TC', 'Microsoft JhengHei', 'Heiti TC', Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000;
+}

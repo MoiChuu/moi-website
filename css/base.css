@@ -1,0 +1,57 @@
+/* base.css */
+
+/* 定義基礎樣式 */
+body {
+    color: #333;
+    background-color: #fff8e7;
+    padding: 20px;
+    line-height: 2;
+    font-size: 18px;
+    cursor: url('../images/Moi-Cursor-1.png'), auto;
+}
+
+html{
+    scrollbar-face-color: transparent;
+    scrollbar-3dlight-color: transparent;
+    scrollbar-track-color: transparent;
+    scrollbar-darkshadow-color: transparent;
+    scrollbar-highlight-color: #000000;
+    scrollbar-shadow-color: #000000;
+    scrollbar-arrow-color: #000000; 
+}
+
+::-webkit-scrollbar {width: 5px; height: 0px;}
+::-webkit-scrollbar-track, 
+::-webkit-scrollbar-button, 
+::-webkit-scrollbar-corner {background-color: transparent;}
+::-webkit-scrollbar-button, 
+::-webkit-scrollbar-corner {height: 0px;}
+::-webkit-scrollbar-thumb {background-color: #783535; border-radius: 10px 0 0 10px;}
+::-webkit-scrollbar-thumb:hover {background-color: #000;}
+
+a {
+    color: #d9ac9a;
+    text-decoration: none;
+    border-radius: 10px;
+    transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+}
+
+a:hover {
+    color: #FFF;
+    background-color: #783535;
+    text-decoration: none;
+    cursor: url('../images/Moi-Cursor-2.png'), auto;
+    border-radius: 10px;
+    transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+}
+
+h1 {
+    color: #783535;
+    text-shadow: 0 0 0.2em #d9ac9a, 0 0 0.2em #d9ac9a, 0 0 0.2em #d9ac9a;
+}

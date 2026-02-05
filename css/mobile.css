@@ -1,0 +1,33 @@
+/* mobile.css */
+
+/* 匯入字型 */
+@import url('./fonts.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
+
+/* 定義手機板樣式 */
+body {
+    font-family: '源起明體 月', 'Noto Serif TC', 'Times New Roman', serif;
+    font-weight: 400;
+    color: #999;
+    background-color: #0c0c0e;
+    padding: 20px 150px 20px 150px;
+    line-height: 2;
+    font-size: 20px;
+}
+
+a {
+    color: #d9ac9a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFF;
+    text-decoration: none;
+}
+
+h1 {
+    color: #552f74;
+    font-family: '獅尾尖腿黑體', 'Noto Sans TC', 'Microsoft JhengHei', 'Heiti TC', Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 0 0 0.2em #000, 0 0 0.2em #000, 0 0 0.2em #000;
+}

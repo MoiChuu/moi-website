@@ -1,0 +1,48 @@
+/* page-btn-mobile.css */
+
+/* 匯入字型 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
+@import url('./fonts.css');
+
+/* 上下頁按鈕 */
+.page-btn {
+    position: fixed;
+    padding: 10px 16px;
+    font-family: 'Noto Serif TC', '源起明體 月', 'Times New Roman', serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    color: #783535;
+    background-color: transparent;
+    z-index: 1000;
+    opacity: 1;
+    transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    }
+    
+.page-btn:hover {
+    opacity: 1;
+    transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+}
+
+.page-btn a {
+    color: #fff;
+}
+
+.page-btn a:hover {
+    color: #fff;
+}
+
+.page-btn.next {
+    right: 20px;
+    bottom: 120px;
+}
+
+.page-btn.prev {
+    left: 20px;
+    top: 20px;
+}

@@ -1,0 +1,57 @@
+/* page-btn-novel.css */
+
+/* 匯入字型 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
+@import url('./fonts.css');
+
+/* 上下頁按鈕 */
+.page-btn {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 100px;
+    text-align: center;
+    padding: 10px 16px;
+    font-family: 'Noto Serif TC', '源起明體 月', 'Times New Roman', serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    line-height: 70px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 999px;
+    display: inline-block;
+    cursor: url('../images/Moi-Cursor-3.png'), auto;
+    writing-mode: horizontal-tb;
+    text-orientation: upright;
+    z-index: 1000;
+    opacity: 0.05;
+    transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+    }
+    
+.page-btn:hover {
+    opacity: 1;
+    transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+}
+
+.page-btn a {
+    color: #fff;
+}
+
+.page-btn a:hover {
+    color: #fff;
+    cursor: url('../images/Moi-Cursor-3.png'), auto;
+}
+
+.page-btn.next {
+    left: 20px;
+}
+
+.page-btn.prev {
+    right: 20px;
+}
