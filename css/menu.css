@@ -75,6 +75,7 @@
 
 .menu-item a.menu-icon:hover {
   cursor: url('../images/Moi-Cursor-3.png'), auto;
+  background-color: transparent;
 }
 
 .menu-item a.author-icon {
