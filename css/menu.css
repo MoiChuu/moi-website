@@ -4,92 +4,91 @@
 @import url('./fonts.css');
 
 /* 定義目錄 */
-.menu {
+.float-menu {
+  position: fixed;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column;
+  gap: 18px;
+  z-index: 9999;
 }
 
 .menu-item {
-  align-items: center;
-  justify-content: center;
   position: relative;
+  width: 40px;
+  height: 40px;
+  transition: width 0.3s;
 }
 
-.main-menu {
-  width: 200px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: none;
+.menu-item a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: transparent;
   border: none;
   border-radius: 10px;
-  text-decoration: none;
+  text-align: center;
+  line-height: 40px;
   color: #000;
-  cursor: url('../images/Moi-Cursor-3.png'), auto;
-  font-size: 12pt;
-  font-family: 'Unifont', 'MS Gothic', '新細明體', 'Noto Sans Mono', monospace;
-  letter-spacing: 1px;
+  text-decoration: none;
 }
 
-a.main-menu.link-only {
-  cursor: url('../images/Moi-Cursor-3.png'), auto;
-  color: #000;
-  font-size: 12pt;
-  font-family: 'Unifont', 'MS Gothic', '新細明體', 'Noto Sans Mono', monospace;
-  background: none;
-  border: none;
-  text-decoration: none;
-  padding: 0;
-  border-radius: 10px;
-}
-
-.sub-menu {
+.menu-item .sub-label {
   position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  display: none;
-  background: rgba(217, 172, 154, 0.5);
-  border: none;
-  border-radius: 10px;
-  z-index: 100;
-}
-
-.sub-menu a {
-  font-size: 9pt;
+  left: 70px;
+  top: 50%;
+  white-space: nowrap;
   font-family: 'Unifont', 'MS Gothic', '新細明體', 'Noto Sans Mono', monospace;
-  display: block;
-  padding: 6px 10px;
-  text-decoration: none;
-  transition-duration: 0.6s;
-  -o-transition-duration: 0.6s;
-  -moz-transition-duration: 0.6s;
-  -webkit-transition-duration: 0.6s;
+  font-size: 12pt;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 6px 12px;
+  border: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateX(-10px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
 }
 
-.sub-menu a:hover {
-  color: #FFF;
+.menu-item:hover {
+  width: auto;
   cursor: url('../images/Moi-Cursor-3.png'), auto;
-  background-color: #783535;
-  text-decoration: none;
-  transition-duration: 0.6s;
-  -o-transition-duration: 0.6s;
-  -moz-transition-duration: 0.6s;
-  -webkit-transition-duration: 0.6s;
 }
 
-.menu-item.has-sub.open .sub-menu {
+.menu-item:hover .sub-label {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+.menu-item a.menu-icon {
+  width: 50px;
+  height: 50px;
   display: block;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
 }
 
-.link-only:hover {
-  color: #FFF;
-  background-color: #783535;
-  text-decoration: none;
-  transition-duration: 0.6s;
-  -o-transition-duration: 0.6s;
-  -moz-transition-duration: 0.6s;
-  -webkit-transition-duration: 0.6s;
+.menu-item a.menu-icon:hover {
+  cursor: url('../images/Moi-Cursor-3.png'), auto;
+}
+
+.menu-item a.author-icon {
+  background-image: url('../images/Moi-icon.png');
+}
+
+.menu-item a.ao3-icon {
+  background-image: url('../images/Moi-icon.png');
+}
+
+.menu-item a.vocus-icon {
+  background-image: url('../images/Moi-icon.png');
+}
+
+.menu-item a.link-icon {
+  background-image: url('../images/Moi-icon.png');
 }
