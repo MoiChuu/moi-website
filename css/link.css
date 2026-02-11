@@ -61,29 +61,29 @@
 /* 假搜尋框 */
 .container {
     display: flex;
-    justify-content: center;  /* 水平置中 */
-    align-items: center;      /* 垂直置中（如果容器有高度） */
-    height: 50px;            /* 讓容器有高度，方便測試垂直置中 */
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
 
 .fake-input {
     display: flex;
-    align-items: center;      /* 垂直置中所有子元素 */
+    align-items: center;
     border: none;
     padding: 5px 10px;
     width: 250px;
-    font-size: 18px;          /* 控制文字大小 */
+    font-size: 18px;
 }
 
 .fake-input .mag {
     margin-right: 8px;
-    font-size: 20px;          /* 可以稍微比文字大一點 */
-    line-height: 1;           /* 避免符號高度影響排列 */
+    font-size: 20px;
+    line-height: 1;
 }
 
 .fake-input .fanpage-link {
     flex: 1;
-    line-height: 1.5;         /* 控制文字行高 */
+    line-height: 1.5;
     color: #2cce10;
     background-color: #2cce10;
     border-radius: 0px;
