@@ -51,9 +51,68 @@
 
 .icon {
     vertical-align: middle;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .text {
     vertical-align: middle;
+}
+
+/* 假搜尋框 */
+.container {
+    display: flex;
+    justify-content: center;  /* 水平置中 */
+    align-items: center;      /* 垂直置中（如果容器有高度） */
+    height: 50px;            /* 讓容器有高度，方便測試垂直置中 */
+}
+
+.fake-input {
+    display: flex;
+    align-items: center;      /* 垂直置中所有子元素 */
+    border: none;
+    padding: 5px 10px;
+    width: 250px;
+    font-size: 18px;          /* 控制文字大小 */
+}
+
+.fake-input .mag {
+    margin-right: 8px;
+    font-size: 20px;          /* 可以稍微比文字大一點 */
+    line-height: 1;           /* 避免符號高度影響排列 */
+}
+
+.fake-input .fanpage-link {
+    flex: 1;
+    line-height: 1.5;         /* 控制文字行高 */
+    color: #2cce10;
+    background-color: #2cce10;
+    border-radius: 0px;
+    transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+}
+
+.fake-input .fanpage-link:hover{
+    color: #000;
+    background-color: #2cce10;
+    border-radius: 0px;
+    transition-duration: 0.6s;
+    -o-transition-duration: 0.6s;
+    -moz-transition-duration: 0.6s;
+    -webkit-transition-duration: 0.6s;
+}
+
+.font-sans {
+    font-family: 'Unifont', 'MS Gothic', '新細明體', 'Noto Sans Mono', monospace;
+    font-size: 14px;
+    color: #e7e547;
+}
+
+.home-btn a {
+    color: #E0E0E0;
+}
+
+.home-btn a:hover {
+    color: #2cce10;
 }
