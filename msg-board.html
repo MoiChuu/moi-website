@@ -10,7 +10,6 @@
   <style>
     /* 匯入字型 */
     @import url('./css/fonts.css');
-    @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Pacifico&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
 
     body {
@@ -34,10 +33,7 @@
     }
 
     h1 {
-      font-family: "Caveat", cursive;
-      font-optical-sizing: auto;
-      font-weight: 700;
-      font-style: normal;
+      font-family: 'K字', cursive;
       font-size: 80px;
       color: #783535;
       text-shadow: 0 0 0.2em #d9ac9a, 0 0 0.2em #d9ac9a, 0 0 0.2em #d9ac9a;
@@ -55,6 +51,11 @@
       box-sizing: border-box;
     }
 
+    .note {
+      font-family: 'Unifont', 'MS Gothic', '新細明體', 'Noto Sans Mono', monospace;
+      font-size: 14px;
+    }
+
     .home-btn {
       color: #783535;
     }
@@ -68,12 +69,12 @@
 <body>
 
     <header>
-      <h1>Moi's Message Board</h1>
+      <h1>留言板</h1>
     </header>
 
     <main>
       <div class="content">
-        <p>歡迎留言噢 (°▹｡ )</p>
+        <p>歡迎留言噢 (°▹｡ )<br><span class="note">꒰ 留言前請詳閱<a href="./cmt-policy.html" rel="nofollow" target="_blank" title="留言版規範">相關規範</a> ꒱</span></p>
       </div>
 
       <!-- Disqus 留言區 -->
