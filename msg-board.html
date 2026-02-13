@@ -56,6 +56,12 @@
       font-size: 14px;
     }
 
+    .note-2 {
+      font-family: 'LINE Seed TW', 'Noto Sans TC', 'Microsoft JhengHei', 'Heiti TC', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
     .home-btn {
       color: #783535;
     }
@@ -97,7 +103,7 @@
       <!-- Disqus 留言區 -->
         <div id="disqus_thread"></div>
 
-        <p>本留言區使用 Disqus ，可能會設定第三方 Cookie 。</p>
+        <p class="note-2">本留言區使用 Disqus ，可能會設定第三方 Cookie 。</p>
 
         <button id="loadBtn" onclick="loadDisqus()">
           我同意並顯示留言
@@ -105,13 +111,22 @@
 
         <script>
         function loadDisqus() {
+          const btn = document.getElementById("loadBtn");
+
+          btn.innerText = "載入中...";
+          btn.disabled = true;
+
           var d = document, s = d.createElement('script');
           s.src = 'https://moichu.disqus.com/embed.js';
           s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
 
-          document.getElementById("loadBtn").style.display = "none";
+          s.onload = function() {
+          btn.style.display = "none";
+          };
+
+          (d.head || d.body).appendChild(s);
         }
+
         </script>
         <noscript>本留言區使用<a href="https://disqus.com/?ref_noscript"> Disqus </a>，需啟用 JavaScript 才能顯示。</noscript>
 
