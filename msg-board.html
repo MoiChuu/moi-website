@@ -63,6 +63,23 @@
     .home-btn a:hover {
       color: #000;
     }
+
+    #loadBtn {
+      padding: 12px 20px;
+      background-color: #783535;
+      color: #FFF;
+      border: none;
+      border-radius: 6px;
+      font-family: 'Unifont', 'MS Gothic', '新細明體', 'Noto Sans Mono', monospace;
+      font-size: 15px;
+      cursor: crosshair;
+      transition: 0.2s ease;
+    }
+
+    #loadBtn:hover {
+      opacity: 0.85;
+      transform: translateY(-1px);
+    }
   </style>
 </head>
 
@@ -79,24 +96,24 @@
 
       <!-- Disqus 留言區 -->
         <div id="disqus_thread"></div>
+
+        <p>本留言區使用 Disqus ，可能會設定第三方 Cookie 。</p>
+
+        <button id="loadBtn" onclick="loadDisqus()">
+          我同意並顯示留言
+        </button>
+
         <script>
-          /**
-          *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-          *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-          /*
-          var disqus_config = function () {
-          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-          };
-          */
-          (function() { // DON'T EDIT BELOW THIS LINE
+        function loadDisqus() {
           var d = document, s = d.createElement('script');
           s.src = 'https://moichu.disqus.com/embed.js';
           s.setAttribute('data-timestamp', +new Date());
           (d.head || d.body).appendChild(s);
-          })();
+
+          document.getElementById("loadBtn").style.display = "none";
+        }
         </script>
-        <noscript>請啟用 JavaScript 以查看<a href="https://disqus.com/?ref_noscript"> Disqus </a>留言。</noscript>
+        <noscript>本留言區使用<a href="https://disqus.com/?ref_noscript"> Disqus </a>，需啟用 JavaScript 才能顯示。</noscript>
 
       <p>　</p>
       <div class="home-btn"><a href="./index.html" rel="nofollow" title="回首頁">◀ Home</a></div>
