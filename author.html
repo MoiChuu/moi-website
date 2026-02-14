@@ -50,6 +50,22 @@
       text-align: center;
     }
 
+    body::before {
+      content: "";
+      position: fixed;
+      right: 30px;
+      bottom: 0px;
+
+      width: 320px;
+      height: 600px;
+
+      background: url("./images/Moi-bg-4-2.png") no-repeat;
+      background-size: contain;
+
+      opacity: 0.1;
+      z-index: -1;
+    }
+
     a {
       color: #d9ac9a;
     }
@@ -67,6 +83,18 @@
       font-size: 80px;
       color: #783535;
       text-shadow: 0 0 0.2em #d9ac9a, 0 0 0.2em #d9ac9a, 0 0 0.2em #d9ac9a;
+    }
+
+    .my-profile {
+      width: 160px;
+      height: 160px;
+      border-radius: 999px;
+      border: 2px solid #FFF;
+      box-shadow:0px 0px 5px rgba(120, 120, 120, 0.5);
+      transition-duration: 0.6s;
+      -o-transition-duration: 0.6s;
+      -moz-transition-duration: 0.6s;
+      -webkit-transition-duration: 0.6s;
     }
 
     .font-hand-TW1 {
@@ -89,6 +117,19 @@
     .font-sans {
       font-family: '芫荽', cursive;
       font-weight: 400;
+    }
+
+    .moi-name {
+      font-family: '851手寫字體', cursive;
+      font-size: 30px;
+      background: linear-gradient(transparent 60%, rgba(223, 184, 255, 0.7) 60%);
+      background-size: 0% 100%;
+      background-repeat: no-repeat;
+      transition: background-size 0.8s ease;
+    }
+
+    .moi-name:hover {
+      background-size: 100% 100%;
     }
 
     .home-btn {
@@ -120,6 +161,7 @@
       <p>　</p>
       <p>⋆ ⁺ ₊ ⋆　✩　⋆ ⁺ ₊ ⋆ ⁺ ₊ ⋆　☀︎　⋆ ⁺ ₊ ⋆  ⁺ ₊ ⋆　☾　⋆ ⁺ ₊ ⋆</p>
       <p>　</p>
+      <p><img src="images/Moi-profile-pic.png" class="my-profile" alt="立繪頭貼"><br><span class="moi-name">默黓</span></p>
       <p class="font-sans">日常 × 設計 × 占星 × 黑暗小說 × 塔羅</p>
       <p>　</p>
       <audio id="music" src="./audio/hisame.mp3" loop></audio>

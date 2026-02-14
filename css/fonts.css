@@ -198,6 +198,14 @@
 }
 
 @font-face {
+    font-family: '851手寫字體'; /* 日文手寫 */
+    src:
+        url('../fonts/851tegaki_zatsu_normal_0883.ttf')   format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: '匯文明朝體'; /* 恐怖氣氛 */
     src: url('../fonts/匯文明朝體.otf')   format('opentype');
     font-weight: normal;
