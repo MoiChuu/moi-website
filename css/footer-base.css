@@ -20,6 +20,19 @@ footer {
     padding: 10px;
 }
 
+/* 手機版縮小字體 */
+@media (max-width: 768px) {
+  footer {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  footer {
+    font-size: 13px;
+  }
+}
+
 footer a{
     color: #d9ac9a;
 }
