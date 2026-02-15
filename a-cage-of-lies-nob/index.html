@@ -2,8 +2,10 @@
 <html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>《謊言與囚籠——情報是毒，愛亦如是》簡介（手機版）</title>
   <link rel="stylesheet" href="../css/mobile.css">
+  <link rel="stylesheet" href="../css/player-btn.css">
   <link rel="stylesheet" href="../css/page-btn-mobile.css">
   <link rel="stylesheet" href="../css/footer-mobile.css">
   <style>
@@ -55,6 +57,10 @@
       <p class="warn">本故事涉及<u>暴力</u>、<u>性描寫</u>、<u>心理操控</u>、<u>病態愛戀</u>、<br><u>心理博弈</u>與<u>心智角力</u>，適合心理成熟之讀者。</p>
       <p>　</p>
       <p>　</p>
+      <audio id="music" src="../audio/garasugoshinoyutsu.mp3" loop></audio>
+      <div class="floating-player">
+        <button id="play-btn" class="glass-btn">🎵</button>
+      </div>
       <div class="page-btn prev"><a href="../index.html" rel="nofollow" title="回首頁">◀ Home</a></div>
       <div class="page-btn next"><a href="./prologue.html" rel="nofollow" title="下一頁">Next ▶</a></div>
   </main>
@@ -64,6 +70,7 @@
   </footer>
 
   <script src="../js/main.js" defer></script>
+  <script src="../js/player-btn.js"></script>
   <script src="../js/console-warning.js"></script>
 </body>
 </html>
