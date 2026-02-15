@@ -16,6 +16,29 @@
       text-align: center;
     }
 
+    .separator {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 40px 0;
+      font-size: clamp(6px, 5vw, 18px);
+    }
+
+    .separator::before,
+    .separator::after {
+      content: "‡†‡†‡†‡†‡†";
+      flex: 0;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .separator span {
+      padding: 0;
+      margin: 0;
+      line-height: 1;
+    }
+
     .ds{
       font-family: 'jf open 粉圓', Arial, sans-serif;
       color: #FFF;
@@ -46,28 +69,29 @@
       <p>　</p>
       <p>愛不是救贖，是慢性的毀滅。<br>他沉溺於她的清醒，她戒斷不了他的混亂。<br>慾望如影隨形，理智在拉扯中潰敗。<br>這是一場以心為祭的交易，代價是<span  style="color: #000; text-shadow: 0 0 0.2em #8c00ff, 0 0 0.2em #8c00ff, 0 0 0.2em #8c00ff;">靈魂</span>。</p>
       <p>　</p>
-      <p>‡†‡†‡†‡†‡†‡†‡†‡†‡†‡†‡†‡†‡†‡†‡</p>
+      <p class="separator"><span></span></p>
       <p>　</p>
       <p class="ds">本作品純屬虛構，與現實人物、事件、團體皆無關聯。</p>
       <p class="ds">【如有雷同・純屬巧合】</p>
       <p>　</p>
-      <p>‡†‡†‡†‡†‡†‡†‡†‡†‡†‡†‡†‡†‡†‡†‡</p>
+      <p class="separator"><span></span></p>
       <p>　</p>
       <p class="warn">⚠ 注意 ⚠</p>
       <p class="warn">本故事涉及<u>暴力</u>、<u>性描寫</u>、<u>心理操控</u>、<u>病態愛戀</u>、<br><u>心理博弈</u>與<u>心智角力</u>，適合心理成熟之讀者。</p>
       <p>　</p>
       <p>　</p>
-      <div class="page-btn prev"><a href="../index.html" rel="nofollow" title="回首頁">◀ Home</a></div>
-      <div class="page-btn next"><a href="./prologue.html" rel="nofollow" title="下一頁">Next ▶</a></div>
     </main>
 
+    <div class="page-btn prev"><a href="../index.html" rel="nofollow" title="回首頁">◀ Home</a></div>
+    <div class="page-btn next"><a href="./prologue.html" rel="nofollow" title="下一頁">Next ▶</a></div>
+
     <audio id="music" src="../audio/garasugoshinoyutsu.mp3" loop></audio>
-      <div class="floating-player">
-        <button id="play-btn" class="glass-btn">🎵</button>
-      </div>
+    <div class="floating-player">
+      <button id="play-btn" class="glass-btn">🎵</button>
+    </div>
 
   <footer>
-      Copyright 2026 © <a href="../index.html" rel="nofollow" target="_blank" title="〰〰溺於夢中的文海〰〰">〰〰溺於夢中的文海〰〰</a><sup><span style='font-size:70%;'>TM</span></sup>. All Rights Reserved.<br>Made with by <a href="mailto:smile1210yoo@gmail.com" rel="nofollow" target="_blank" title="寄信給我">默黓Moi</a> ♥<br><a href="copyright.html" rel="nofollow" target="_blank" title="版權宣告">版權宣告</a>｜<a href="disclaimer.html" rel="nofollow" target="_blank" title="免責聲明">免責聲明</a>
+    Copyright 2026 © <a href="../index.html" rel="nofollow" target="_blank" title="〰〰溺於夢中的文海〰〰">〰〰溺於夢中的文海〰〰</a><sup><span style='font-size:70%;'>TM</span></sup>. All Rights Reserved.<br>Made with by <a href="mailto:smile1210yoo@gmail.com" rel="nofollow" target="_blank" title="寄信給我">默黓Moi</a> ♥<br><a href="copyright.html" rel="nofollow" target="_blank" title="版權宣告">版權宣告</a>｜<a href="disclaimer.html" rel="nofollow" target="_blank" title="免責聲明">免責聲明</a>
   </footer>
 
   <script src="../js/main.js" defer></script>
