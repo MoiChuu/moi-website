@@ -7,8 +7,22 @@ body {
     font-size: 18px;
     cursor: url('../images/Moi-Cursor-1.png'), auto;
     max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
     padding: 0 20px;
-    margin: 0;
+}
+
+/* 手機版縮小字體 */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
 }
 
 html{
