@@ -6,6 +6,9 @@ body {
     line-height: 2;
     font-size: 18px;
     cursor: url('../images/Moi-Cursor-1.png'), auto;
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 0;
 }
 
 html{
