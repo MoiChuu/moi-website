@@ -14,19 +14,6 @@
   font-size: 20pt;
   padding: 20px;
   border-radius: 50%;
-  opacity: 0.1;
-  transition-duration: 0.6s;
-  -o-transition-duration: 0.6s;
-  -moz-transition-duration: 0.6s;
-  -webkit-transition-duration: 0.6s;
-}
-
-.glass-btn:hover {
-  opacity: 1;
-  transition-duration: 0.6s;
-  -o-transition-duration: 0.6s;
-  -moz-transition-duration: 0.6s;
-  -webkit-transition-duration: 0.6s;
 }
 
 /* 浮動播放器位置 */
