@@ -1,5 +1,8 @@
 /* link.css */
 
+/* 匯入字型 */
+@import url('./fonts.css');
+
 /* 連結專屬樣式 */
 /* 表格 */
 .table {
