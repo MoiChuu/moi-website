@@ -110,7 +110,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;             /* 讓容器有間距 */
+    padding: 20px;
     height: 120px;
 }
 
