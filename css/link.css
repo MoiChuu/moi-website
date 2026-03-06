@@ -110,7 +110,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90px;
+    padding: 20px;             /* 讓容器有間距 */
+    height: 120px;
 }
 
 .note {
@@ -118,13 +119,13 @@
     font-size: 14px;
     color: #e7e547;
     background-color: rgba(255, 248, 231, 0.05);
-    overflow-x:hidden;
-    overflow-y:hidden;
-    width:500px;
-    height:80px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 500px;
+    height: 100px;
     text-align: center;
-    border:1px dashed #000;
-    padding:20px;
+    border: 1px dashed #000;
+    padding: 20px;
     border-radius: 10px;
 }
 
