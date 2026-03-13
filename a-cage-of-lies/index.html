@@ -48,6 +48,30 @@
     /* 匯入字型 */
     @import url('../css/fonts.css');
 
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      opacity: 0.1;
+      z-index: -1;
+
+      background-image:
+        url(../images/a-cage-of-lies-bg-1.png),
+        url(../images/a-cage-of-lies-bg-2.png);
+
+      background-position:
+        left 100px bottom 80px,
+        right 100px bottom 80px;
+
+      background-repeat:
+        no-repeat,
+        no-repeat;
+
+      background-size:
+        300px auto,
+        300px auto;
+    }
+
     p {
       text-align: center;
     }

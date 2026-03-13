@@ -18,6 +18,25 @@
     @import url('../css/fonts.css');
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
 
+    body::before {
+      content: "";
+      position: fixed;
+      bottom: 250px;
+      left: 50%;
+      transform: translateX(-50%);
+  
+      width: 300px;
+      height: 300px;
+  
+      background-image: url("../images/a-cage-of-lies-bg-4.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+  
+      opacity: 0.1;
+      z-index: -1;
+    }
+
     h1 {
       text-align: center;
     }

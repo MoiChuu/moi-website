@@ -15,6 +15,30 @@
     @import url('../css/fonts.css');
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
 
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      opacity: 0.1;
+      z-index: -1;
+
+      background-image:
+        url(../images/a-cage-of-lies-bg-5.png),
+        url(../images/a-cage-of-lies-bg-4.png);
+
+      background-position:
+        right 80px bottom 80px,
+        left 80px bottom 80px;
+
+      background-repeat:
+        no-repeat,
+        no-repeat;
+
+      background-size:
+        300px auto,
+        300px auto;
+    }
+
     h2 {
       font-family: '源起明體 月', 'Noto Serif TC', 'Times New Roman', serif;
       font-weight: 500;
