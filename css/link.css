@@ -129,6 +129,11 @@
     border-radius: 10px;
 }
 
+.email {
+    font-family: 'Unifont', 'MS Gothic', '新細明體', 'Noto Sans Mono', monospace;
+    font-size: 14px;
+}
+
 .home-btn a {
     color: #E0E0E0;
 }
