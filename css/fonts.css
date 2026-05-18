@@ -13,16 +13,6 @@
 }
 
 @font-face {
-    font-family: 'jf open 粉圓';
-    src:
-        url('../fonts/jf-openhuninn-21.woff2') format('woff2'),
-        url('../fonts/jf-openhuninn-21.woff')  format('woff'),
-        url('../fonts/jf-openhuninn-2.1.ttf')   format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'LINE Seed TW';
     src:
         url('../fonts/LINESeedTW_OTF_Rg.woff2') format('woff2'),
@@ -202,32 +192,5 @@
     src:
         url('../fonts/851tegaki_zatsu_normal_0883.ttf')   format('truetype');
     font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: '匯文明朝體'; /* 恐怖氣氛 */
-    src: url('../fonts/匯文明朝體.otf')   format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: '獅尾尖腿黑體'; /* 恐怖氣氛 */
-    src:
-        url('../fonts/SweiSpikeLegCJKtc-Medium.woff2') format('woff2'),
-        url('../fonts/SweiSpikeLegCJKtc-Medium.woff')  format('woff'),
-        url('../fonts/SweiSpikeLegCJKtc-Medium.ttf')   format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: '獅尾尖腿黑體'; /* 恐怖氣氛 */
-    src:
-        url('../fonts/SweiSpikeLegCJKtc-Bold.woff2') format('woff2'),
-        url('../fonts/SweiSpikeLegCJKtc-Bold.woff')  format('woff'),
-        url('../fonts/SweiSpikeLegCJKtc-Bold.ttf')   format('truetype');
-    font-weight: 700;
     font-style: normal;
 }
