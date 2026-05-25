@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trustedscripts.com; style-src 'self' 'unsafe-inline' https://googleapis.com https://fonts.googleapis.com https://jsdelivr.net; font-src 'self' https://gstatic.com https://fonts.gstatic.com;">
   <!-- 傳統瀏覽器 -->
   <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -110,34 +111,19 @@
       </div>
 
       <!-- Disqus 留言區 -->
-        <div id="disqus_thread"></div>
+      <div id="disqus_thread"></div>
 
-        <p class="note-2">本留言區使用 Disqus ，可能會設定第三方 Cookie 。</p>
+      <p class="note-2">本留言區使用 Disqus ，可能會設定第三方 Cookie 。</p>
 
-        <button id="loadBtn" onclick="loadDisqus()">
-          我同意並顯示留言
-        </button>
+      <!-- 把 onclick 拿掉了，改由 js 去監聽點擊 -->
+      <button id="loadBtn">
+        我同意並顯示留言
+      </button>
 
-        <script>
-        function loadDisqus() {
-          const btn = document.getElementById("loadBtn");
+      <!-- 引入獨立的資安標準腳本檔案 -->
+      <script src="./js/disqus-loader.js"></script>
 
-          btn.innerText = "載入中...";
-          btn.disabled = true;
-
-          var d = document, s = d.createElement('script');
-          s.src = 'https://moichu.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-
-          s.onload = function() {
-          btn.style.display = "none";
-          };
-
-          (d.head || d.body).appendChild(s);
-        }
-
-        </script>
-        <noscript>本留言區使用<a href="https://disqus.com/?ref_noscript"> Disqus </a>，需啟用 JavaScript 才能顯示。</noscript>
+      <noscript>本留言區使用<a href="https://disqus.com/?ref_noscript"> Disqus </a>，需啟用 JavaScript 才能顯示。</noscript>
 
       <p>　</p>
     </main>
