@@ -94,9 +94,23 @@ a:hover {
 }
 
 .table-link{
-    width: 550px;
+    width: 450px;
     table-layout: fixed;
     border-collapse: collapse;
+}
+
+/* 粉專繪帳表格 */
+.table-link.tight {
+    width: 250px; 
+    transform: translateX(10px); 
+}
+
+.table-link.tight th,
+.table-link.tight td {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 /* 圖片翻轉 */
