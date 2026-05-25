@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trustedscripts.com https://*.disqus.com https://*.disquscdn.com; frame-src 'self' https://*.disqus.com; style-src 'self' 'unsafe-inline' https://googleapis.com https://fonts.googleapis.com https://jsdelivr.net https://*.disquscdn.com; font-src 'self' https://gstatic.com https://fonts.gstatic.com; connect-src 'self' https://*.disqus.com;">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trustedscripts.com https://moichu.disqus.com https://*.disqus.com https://*.disquscdn.com; frame-src 'self' https://moichu.disqus.com https://disqus.com https://*.disqus.com; style-src 'self' 'unsafe-inline' https://googleapis.com https://fonts.googleapis.com https://jsdelivr.net https://*.disquscdn.com; font-src 'self' https://gstatic.com https://fonts.gstatic.com; connect-src 'self' https://moichu.disqus.com https://*.disqus.com; img-src 'self' data: https://*.disquscdn.com https://referrer.disqus.com;">
   <!-- 傳統瀏覽器 -->
   <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -115,12 +115,10 @@
 
       <p class="note-2">本留言區使用 Disqus ，可能會設定第三方 Cookie 。</p>
 
-      <!-- 把 onclick 拿掉了，改由 js 去監聽點擊 -->
       <button id="loadBtn">
         我同意並顯示留言
       </button>
 
-      <!-- 引入獨立的資安標準腳本檔案 -->
       <script src="./js/disqus-loader.js"></script>
 
       <noscript>本留言區使用<a href="https://disqus.com/?ref_noscript"> Disqus </a>，需啟用 JavaScript 才能顯示。</noscript>
