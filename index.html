@@ -57,7 +57,7 @@
     /* 匯入字型 */
     @import url('./css/fonts.css');
     @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Crimson+Pro:wght@600&family=Dancing+Script:wght@500&family=Homemade+Apple&family=Itim&family=Satisfy&family=Shadows+Into+Light+Two&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Combo&family=Faculty+Glyphic&family=Glass+Antiqua&family=Viaoda+Libre&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
 
     body {
@@ -217,7 +217,7 @@
     </header>
 
     <main>
-      <p class="font-hand-TW1"><span style="text-shadow: #000 0px 1px 5px; color: #FFF;">第<script language="javascript"> var now=new Date();var spday=new Date(2025,7-1,1);a=(now.getTime()-spday.getTime())/(24*60*60*1000);a=Math.ceil(a); document.write ("<b>"+a+"</b>");</script>頁翻過的故事 </span>📖</p>
+      <p class="font-hand-TW1"><span style="text-shadow: #000 0px 1px 5px; color: #FFF;">第<span id="day-count">計算中...</span>頁翻過的故事 </span>📖</p>
       <p>　</p>
       <p>⋆ ⌁⌁⌁ ♥ ⌁⌁⌁ ⋆<a rel="me" href="https://www.threads.net/@moi_energy.2017" style="display:none;"></a></p>
       <p>　</p>
@@ -282,6 +282,7 @@
     </footer>
 
     <script src="./js/main.js" defer></script>
+    <script src="./js/counter.js"></script>
     <script src="./js/player-btn.js"></script>
     <script src="./js/console-warning.js"></script>
 </body>
