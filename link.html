@@ -117,6 +117,27 @@
       -moz-transition-duration: 0.6s;
       -webkit-transition-duration: 0.6s;
     }
+
+    /* 預設容器大小 */
+    .link-donate {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 250px;
+      height: auto;
+    }
+
+    .donate-images {
+      width: 100%;
+      height: auto;
+      content: url('images/Moi-link-Donate-1.png'); /* 預設顯示圖 1 */
+      transition: all 0.3s ease;
+    }
+
+    /* 當滑鼠懸停時，利用 CSS 直接更換圖片來源 */
+    .donate-images:hover {
+      content: url('images/Moi-link-Donate-2.png'); /* 變更為圖 2 */
+    }
   </style>
 </head>
 
@@ -235,7 +256,9 @@
         </details>
         <details class="accordion">
         <summary>Donate</summary>
-        <p><img src="images/Moi-link-Donate-1.png" onmouseover="this.src='images/Moi-link-Donate-2.png'" onmouseout="this.src='images/Moi-link-Donate-1.png'" alt="支持默黓" title="幫助地方洛奇維修網站♥" style="width: 250px; height: auto;"><br>₊⁺ 支持默黓 ₊⁺</p>
+        <div class="link-donate">
+            <img src="images/Moi-link-Donate-1.png" class="donate-images" alt="支持默黓" title="幫助地方洛奇維修網站♥"><br>₊⁺ 支持默黓 ₊⁺
+        </div>
         <div class="table-wrap">
             <table class="table-link">
                 <thead>

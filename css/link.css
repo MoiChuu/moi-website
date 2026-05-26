@@ -212,6 +212,27 @@ details[open] summary::after {
     content: " −";
 }
 
+/* 讓洛奇動起來 */
+.link-donate {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: auto;
+}
+
+.donate-images {
+    width: 100%;
+    height: auto;
+    content: url('images/Moi-link-Donate-1.png'); /* 預設顯示圖 1 */
+    transition: all 0.3s ease;
+}
+
+.donate-images:hover {
+    content: url('images/Moi-link-Donate-2.png'); /* 變更為圖 2 */
+}
+
+/* 告示框 */
 .note-box {
     display: flex;
     justify-content: center;
