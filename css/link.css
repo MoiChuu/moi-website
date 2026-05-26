@@ -225,7 +225,6 @@ details[open] summary::after {
     width: 100%;
     height: auto;
     content: url('../images/Moi-link-Donate-1.png');
-    transition: all 0.3s ease;
 }
 
 .donate-images:hover {
