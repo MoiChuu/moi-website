@@ -232,30 +232,6 @@ details[open] summary::after {
     content: url('../images/Moi-link-Donate-2.png');
 }
 
-/* 洛奇動吃動2 */
-.link-donate-2 {
-    width: 250px;
-    max-width: 100%; /* 確保在小螢幕手機上不會爆出去 */
-    margin: 0 auto; /* 讓圖片在手機畫面上水平置中 */
-}
-
-.donate-images-2 {
-    width: 100%;
-    height: 0;
-    padding-top: 100%;     /* 🌟 關鍵修正：正方形的比例是 100%（寬高一模一樣） */
-    display: block;
-    background-image: url('../images/Moi-link-Donate-1.png'); /* 補上正確的 ../ */
-    background-size: contain;    /* 🌟 關鍵修正：改用 contain，確保整張圖完整顯現不被裁切 */
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: background-image 0.4s ease;
-}
-
-/* 🌟 當滑鼠懸停（或手機手指點擊）時 */
-.donate-images-2:hover {
-    background-image: url('../images/Moi-link-Donate-2.png'); /* 手機桌機都能完美更換圖 2 */
-}
-
 /* 告示框 */
 .note-box {
     display: flex;
