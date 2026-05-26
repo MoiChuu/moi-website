@@ -212,7 +212,7 @@ details[open] summary::after {
     content: " −";
 }
 
-/* 讓洛奇動起來 */
+/* 洛奇動吃動 */
 .link-donate {
     position: relative;
     left: 50%;
@@ -224,12 +224,12 @@ details[open] summary::after {
 .donate-images {
     width: 100%;
     height: auto;
-    content: url('images/Moi-link-Donate-1.png'); /* 預設顯示圖 1 */
+    content: url('images/Moi-link-Donate-1.png');
     transition: all 0.3s ease;
 }
 
 .donate-images:hover {
-    content: url('images/Moi-link-Donate-2.png'); /* 變更為圖 2 */
+    content: url('images/Moi-link-Donate-2.png');
 }
 
 /* 告示框 */
