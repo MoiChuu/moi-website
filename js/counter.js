@@ -1,4 +1,6 @@
 // counter.js
+
+// 計日器
 var now = new Date();
 var spday = new Date(2025, 7 - 1, 1); // 這裡請自行修改你的年月日
 var a = (now.getTime() - spday.getTime()) / (24 * 60 * 60 * 1000);
