@@ -64,17 +64,18 @@
     body::before {
       content: "";
       position: fixed;
-      right: 30px;
-      bottom: 0px;
-
-      width: 320px;
-      height: 600px;
-
-      background: url("./images/Moi-bg-2.png") no-repeat;
-      background-size: contain;
-
-      opacity: 0.1;
-      z-index: -1;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        radial-gradient(rgba(0, 0, 0, .02) 1px, transparent 1px),
+        radial-gradient(rgba(0, 0, 0, .012) 1px, transparent 1px);
+      background-size:
+        4px 4px,
+        9px 9px;
+      background-position:
+        0 0,
+        2px 2px;
+      opacity: .5;
     }
 
     a {
@@ -96,27 +97,6 @@
       text-shadow: 0 0 0.2em #d9ac9a, 0 0 0.2em #d9ac9a, 0 0 0.2em #d9ac9a;
     }
 
-    .my-profile {
-      width: 160px;
-      height: 160px;
-      border-radius: 999px;
-      border: 2px solid #FFF;
-      box-shadow:0px 0px 5px rgba(120, 120, 120, 0.5);
-      filter: saturate(0.8) sepia(0.2) brightness(1.05);
-      transition-duration: 0.6s;
-      -o-transition-duration: 0.6s;
-      -moz-transition-duration: 0.6s;
-      -webkit-transition-duration: 0.6s;
-    }
-
-    .my-profile:hover {
-      filter: none;
-      transition-duration: 0.6s;
-      -o-transition-duration: 0.6s;
-      -moz-transition-duration: 0.6s;
-      -webkit-transition-duration: 0.6s;
-    }
-
     .font-hand-TW1 {
       font-family: 'K字', 'Microsoft JhengHei', 'Heiti TC', Arial, sans-serif;
     }
@@ -133,19 +113,6 @@
       font-style: normal;
       font-size: 22px;
     }
-    
-    .font-sans {
-      font-family: '芫荽', cursive;
-      font-weight: 400;
-    }
-
-    .moi-name {
-      font-family: '851手寫字體', cursive;
-      font-size: 30px;
-      background: linear-gradient(transparent 60%, rgba(223, 184, 255, 0.7) 60%);
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-    }
 
     .home-btn {
       color: #783535;
@@ -160,7 +127,7 @@
 <body>
 
     <header>
-      <h1>About Moi</h1>
+      <h1>About Author</h1>
     </header>
 
     <main>
@@ -173,11 +140,6 @@
       <p class="font-hand-EN">You might find it hard to imagine—<br>a woman who faints at the sight of blood and flees at the first sign of<br>a cockroach can write stories that send shivers down your spine.</p>
       <p class="font-hand-EN">I write dark fantasy and horror, and I sometimes draw.<br>I’ve dabbled in astrology, and recently started exploring the world of tarot.</p>
       <p class="font-hand-EN">I try a bit of everything, master of none—but that’s just who I am.<br>Because when things aren’t perfect, stories can feel messy and true, just like life. ♪</p>
-      <p>　</p>
-      <p>⋆ ⁺ ₊ ⋆　✩　⋆ ⁺ ₊ ⋆ ⁺ ₊ ⋆　☀︎　⋆ ⁺ ₊ ⋆  ⁺ ₊ ⋆　☾　⋆ ⁺ ₊ ⋆</p>
-      <p>　</p>
-      <p><img src="images/Moi-profile-pic.png" class="my-profile" alt="立繪頭貼"><br><span class="moi-name">默黓</span></p>
-      <p class="font-sans">日常 × 設計 × 占星 × 黑暗小說 × 塔羅</p>
     </main>
     
     <p>　</p>
