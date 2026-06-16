@@ -49,7 +49,6 @@
   <link rel="stylesheet" href="./css/base.css">
   <link rel="stylesheet" href="./css/player-btn.css">
   <link rel="stylesheet" href="./css/home-btn-base.css">
-  <link rel="stylesheet" href="./css/menu.css">
   <link rel="stylesheet" href="./css/footer-base.css">
   <style>
     /* 匯入字型 */
@@ -152,25 +151,60 @@
       font-weight: 400;
     }
 
-    .menu-container {
-      display: flex;
-      justify-content: center;
-      gap: 16px;
-    }
-
-    .menu-item {
-      width: 100px;
-      height: 36px;
+    #Menu_1,
+    #Menu_2,
+    #Menu_3,
+    #Menu_4 {
+      position: fixed;
+      left: -70px;
+      width: 80px;
+      height: 120px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+      color: #FFF;
+      border-radius: 10px;
+      transition: 0.6s;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: none;
-      box-sizing: border-box;
+      gap: 10px;
+      writing-mode: vertical-lr;
+      text-orientation: upright;
     }
 
-    .menu-link {
-      text-decoration: none;
-      color: #d9ac9a;
+    #Menu_1 {
+      top: 20%;
+    }
+
+    #Menu_2 {
+      top: 35%;
+    }
+
+    #Menu_3 {
+      top: 50%;
+    }
+
+    #Menu_4 {
+      top: 65%;
+    }
+
+    #Menu_1:hover,
+    #Menu_2:hover,
+    #Menu_3:hover,
+    #Menu_4:hover {
+      left: -10px;
+    }
+
+    #Menu_1:hover a:hover,
+    #Menu_2:hover a:hover,
+    #Menu_3:hover a:hover,
+    #Menu_4:hover a:hover {
+      cursor: url('../images/Moi-Cursor-3.png'), auto;
+      color: #000;
+      background-color: transparent;
     }
 
     .home-btn {
@@ -206,13 +240,29 @@
       <p>　</p>
       <p class="separator"></p>
       <p>　</p>
-      <p class="font-sans-2"><a href="author.html" target="_blank" title="關於作者">ꕀꕀ溺於夢中的文海ꕀꕀ</a></p>
+      <p class="font-sans-2">ꕀꕀ溺於夢中的文海ꕀꕀ</p>
       <p>　</p>
       <p class="font-sans">連載小說：<a href="https://cxc.today/@moi_chu/work/51778" rel="noreferrer nofollow" target="_blank" title="《謊言與囚籠——情報是毒，愛亦如是》">《謊言與囚籠——情報是毒，愛亦如是》</a><span title="心理戰大概算是一種精神獵奇？">（R18G）</span></p>
       <p class="font-sans">短篇：<span title="想看請私我">血海戀慾</span><span title="常見的那種獵奇">（R18G）</span></p>
       <p>　</p>
     </main>
 
+    <div id="Menu_1">
+        <a class="link" href="author.html" target="_blank" title="關於作者">關於作者</a>
+    </div>
+
+    <div id="Menu_2">
+        <a class="link" href="https://archiveofourown.org/users/Moi_CHu" rel="noreferrer nofollow" target="_blank" title="原本是想讓小說進軍在AO3">AO3</a>
+    </div>
+
+    <div id="Menu_3">
+        <a class="link" href="https://vocus.cc/salon/moi_chu" rel="noreferrer nofollow" target="_blank" title="小說在方格子好像不太合適">方格子</a>
+    </div>
+
+    <div id="Menu_4">
+        <a class="link" href="https://cxc.today/store/moi_chu" rel="noreferrer nofollow" target="_blank" title="Content x Creator">CxC</a>
+    </div>
+    
     <p>　</p>
 
     <audio id="music" src="./audio/amenokoibitotachi.mp3" loop></audio>
