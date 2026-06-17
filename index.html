@@ -141,20 +141,17 @@
     .font-sans {
       font-family: '芫荽', cursive;
       font-weight: 400;
-      text-align: left;
-      margin-left: 30%;
-      text-indent: -4em;
     }
 
     .font-sans-2 {
       font-family: '芫荽', cursive;
       font-weight: 400;
+      text-align: left;
+      margin-left: 30%;
+      text-indent: -4em;
     }
 
-    #Menu_1,
-    #Menu_2,
-    #Menu_3,
-    #Menu_4 {
+    .menu-panel {
       position: fixed;
       left: -70px;
       width: 80px;
@@ -175,33 +172,16 @@
       text-orientation: upright;
     }
 
-    #Menu_1 {
-      top: 20%;
-    }
+    #Menu_1 { top: 20%; }
+    #Menu_2 { top: 35%; }
+    #Menu_3 { top: 50%; }
+    #Menu_4 { top: 65%; }
 
-    #Menu_2 {
-      top: 35%;
-    }
-
-    #Menu_3 {
-      top: 50%;
-    }
-
-    #Menu_4 {
-      top: 65%;
-    }
-
-    #Menu_1:hover,
-    #Menu_2:hover,
-    #Menu_3:hover,
-    #Menu_4:hover {
+    .menu-panel:hover {
       left: -10px;
     }
 
-    #Menu_1:hover a:hover,
-    #Menu_2:hover a:hover,
-    #Menu_3:hover a:hover,
-    #Menu_4:hover a:hover {
+    .menu-panel:hover a:hover {
       cursor: url('../images/Moi-Cursor-3.png'), auto;
       color: #000;
       background-color: transparent;
@@ -240,30 +220,30 @@
       <p>　</p>
       <p class="separator"></p>
       <p>　</p>
-      <p class="font-sans-2">ꕀꕀ溺於夢中的文海ꕀꕀ</p>
+      <p class="font-sans">ꕀꕀ溺於夢中的文海ꕀꕀ</p>
       <p>　</p>
-      <p class="font-sans">連載小說：<a href="https://cxc.today/@moi_chu/work/51778" rel="noreferrer nofollow" target="_blank" title="《謊言與囚籠——情報是毒，愛亦如是》">《謊言與囚籠——情報是毒，愛亦如是》</a><span title="心理戰大概算是一種精神獵奇？">（R18G）</span></p>
-      <p class="font-sans">短篇：<span title="想看請私我">血海戀慾</span><span title="常見的那種獵奇">（R18G）</span></p>
+      <p class="font-sans-2">連載小說：<a href="https://cxc.today/@moi_chu/work/51778" rel="noreferrer nofollow" target="_blank" title="《謊言與囚籠——情報是毒，愛亦如是》">《謊言與囚籠——情報是毒，愛亦如是》</a><span title="心理戰大概算是一種精神獵奇？">（R18G）</span></p>
+      <p class="font-sans-2">短篇：<span title="想看請私我">血海戀慾</span><span title="常見的那種獵奇">（R18G）</span></p>
       <p>　</p>
     </main>
 
-    <div id="Menu_1">
-        <a class="link" href="author.html" target="_blank" title="關於作者">關於作者</a>
+    <div id="Menu_1" class="menu-panel">
+      <a class="link" href="author.html" target="_blank" title="關於作者">關於作者</a>
     </div>
 
-    <div id="Menu_2">
-        <a class="link" href="https://archiveofourown.org/users/Moi_CHu" rel="noreferrer nofollow" target="_blank" title="原本是想讓小說進軍在AO3">AO3</a>
+    <div id="Menu_2" class="menu-panel">
+      <a class="link" href="https://archiveofourown.org/users/Moi_CHu" rel="noreferrer nofollow" target="_blank" title="原本是想讓小說進軍在AO3">AO3</a>
     </div>
 
-    <div id="Menu_3">
-        <a class="link" href="https://vocus.cc/salon/moi_chu" rel="noreferrer nofollow" target="_blank" title="小說在方格子好像不太合適">方格子</a>
+    <div id="Menu_3" class="menu-panel">
+      <a class="link" href="https://vocus.cc/salon/moi_chu" rel="noreferrer nofollow" target="_blank" title="小說在方格子好像不太合適">方格子</a>
     </div>
 
-    <div id="Menu_4">
-        <a class="link" href="https://cxc.today/store/moi_chu" rel="noreferrer nofollow" target="_blank" title="Content x Creator">CxC</a>
+    <div id="Menu_4" class="menu-panel">
+      <a class="link" href="https://cxc.today/store/moi_chu" rel="noreferrer nofollow" target="_blank" title="Content x Creator">CxC</a>
     </div>
     
-    <p></p>
+    <p>　</p>
 
     <audio id="music" src="./audio/amenokoibitotachi.mp3" loop></audio>
     <div class="floating-player">
