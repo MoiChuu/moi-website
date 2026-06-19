@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://trustedscripts.com; style-src 'self' 'unsafe-inline' https://googleapis.com https://fonts.googleapis.com https://jsdelivr.net; font-src 'self' https://gstatic.com https://fonts.gstatic.com;">
+  <!-- 傳統瀏覽器 -->
+  <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+  <!-- Apple / iOS -->
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+  <!-- Android / PWA -->
+  <link rel="manifest" href="assets/favicon/site.webmanifest">
+  <meta name="theme-color" content="#fff8e7">
+  <title>《謊言與囚籠——情報是毒，愛亦如是》</title>
+  <link rel="stylesheet" href="./css/novel.css">
+  <link rel="stylesheet" href="./css/player-btn.css">
+  <link rel="stylesheet" href="./css/home-btn-base.css">
+  <link rel="stylesheet" href="./css/footer-base.css">
+  <script type="text/human">
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+
+             ,ggg,           ,gggg,                                                                       ,gggg,                           
+            dP""8I         ,88"""Y8b,                                                   ,dPYb,           d8" "8I                           
+           dP   88        d8"     `Y8                                                   IP'`Yb           88  ,dP                           
+          dP    88       d8'   8b  d8                                                   I8  8I        8888888P"     gg                     
+         ,8'    88      ,8I    "Y88P'                                                   I8  8'           88         ""                     
+         d88888888      I8'             ,gggg,gg    ,gggg,gg   ,ggg,         ,ggggg,    I8 dP            88         gg    ,ggg,       ,g,    
+   __   ,8"     88      d8             dP"  "Y8I   dP"  "Y8I  i8" "8i       dP"  "Y8ggg I8dP        ,aa,_88         88   i8" "8i     ,8'8,   
+  dP"  ,8P      Y8      Y8,           i8'    ,8I  i8'    ,8I  I8, ,8I      i8'    ,8I   I8P        dP" "88P         88   I8, ,8I    ,8'  Yb  
+  Yb,_,dP       `8b,    `Yba,,_____, ,d8,   ,d8b,,d8,   ,d8I  `YbadP'     ,d8,   ,d8'  ,d8b,_      Yb,_,d88b,,_   _,88,_ `YbadP'   ,8'_   8) 
+   "Y8P"         `Y8      `"Y8888888 P"Y8888P"`Y8P"Y8888P"888888P"Y888    P"Y8888P"    PI8"8888     "Y8P"  "Y888888P""Y8888P"Y888P' "YY8P8P
+                                                        ,d8I'                           I8 `8,                                             
+                                                      ,dP'8I                            I8  `8,                                            
+                                                     ,8"  8I                            I8   8I                                            
+                                                     I8   8I                            I8   8I                                            
+                                                     `8, ,8I                            I8, ,8'                                            
+                                                      `Y8P"                              "Y8P'                                             
+
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑🌑
+  </script>
+  <style>
+    /* 匯入字型 */
+    @import url('./css/fonts.css');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+    /* 定義小說頁面樣式 */
+    main {
+      max-width: 800px;
+      margin: 0 auto 100px;
+      padding: 0 40px;
+    }
+
+    /* 定義頁尾 */
+    footer {
+      color: #484b52;
+      background-color: rgba(15, 17, 21, 0.5);
+    }
+
+    footer a {
+      color: #a59bbb;
+    }
+
+    footer a:hover {
+      color: #FFF;
+    }
+
+    /* 小說簡介 */
+    .syn-box {
+      max-width: 800px;
+      margin: 60px auto;
+    }
+
+    .syn {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: left;
+      line-height: 2;
+    }
+
+    /* 作品介紹 */
+    .intro-box {
+      max-width: 600px;
+      margin: 60px auto;
+    }
+
+    .intro {
+      font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'Heiti TC', Arial, sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: left;
+      line-height: 2;
+      background: rgba(12, 12, 18, .7);
+      backdrop-filter: blur(10px);
+      padding: 30px 40px;
+      border: 2px solid rgba(255, 255, 255, .08);
+    }
+
+    .hidden-text {
+      color: #000;
+      font-weight: 700;
+      text-shadow: 0 0 0.2em #b75d5d, 0 0 0.2em #b75d5d, 0 0 0.2em #b75d5d;
+    }
+
+    /* 警告標語 */
+    .warn-box {
+      font-family: '匯文明朝體', cursive;
+      color: #a14a4a;
+      text-align: center;
+      transition-duration: 0.6s;
+      -o-transition-duration: 0.6s;
+      -moz-transition-duration: 0.6s;
+      -webkit-transition-duration: 0.6s;
+    }
+
+    .warn-box:hover {
+      color: #FF0000;
+      transition-duration: 0.6s;
+      -o-transition-duration: 0.6s;
+      -moz-transition-duration: 0.6s;
+      -webkit-transition-duration: 0.6s;
+    }
+
+    .tag {
+      color: #FF0000;
+    }
+
+    .author-name {
+      font-family: 'LINE Seed TW', 'Noto Sans TC', 'Microsoft JhengHei', 'Heiti TC', Arial, sans-serif;
+      font-weight: 400;
+    }
+
+    .cli-style-EN {
+      font-family: "Share Tech Mono", monospace;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 26px;
+    }
+
+    .ds {
+      font-family: 'jf open 粉圓', Arial, sans-serif;
+      text-align: center;
+    }
+
+    .text {
+      font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'Heiti TC', Arial, sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      color: #FFF;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+    <header>
+      <h1>《謊言與囚籠——情報是毒，愛亦如是》</h1>
+      <i><span class="tag">#成人向</span> #懸疑 #心理戰 #諜對諜 #相愛相殺</i>
+    </header>
+
+    <main>
+      <p class="center"><i>「在子彈與謊言之間，他們不是戀人，而是彼此最致命的弱點。」</i></p>
+      <p>　</p>
+      <div class="syn-box">
+        <div class="syn">
+          <p>在情報局裡，一場圍繞「忠誠 vs 情感」的攻防戰悄然展開。</p>
+          <p>　</p>
+          <p>她是逃婚的名門之女，成為情報局局長的下屬。<br>他是玩世不恭的情報狐狸，從沒把感情當回事。<br>然而當子彈與謊言交織，他們終究無法保持距離。</p>
+          <p>　</p>
+          <p>　</p>
+          <p>一個等待被愛的男人，一個不敢被愛的女人。<br>——這不是愛情，而是比愛更殘酷的牽制。</p>
+          <p>　</p>
+          <p>　</p>
+          <p>　</p>
+          <p>愛不是救贖，是慢性的毀滅。<br>他沉溺於她的清醒，她戒斷不了他的混亂。<br>慾望如影隨形，理智在拉扯中潰敗。<br>這是一場以心為祭的交易，代價是<span class="hidden-text">靈魂</span>。</p>
+        </div>
+      </div>
+      <p>　</p>
+      <div class="warn-box">
+        <p lang="en" class="cli-style-EN">⚠ CONTENT WARNING ⚠</p>
+        <p>本故事涉及<u>暴力</u>、<u>隱晦性描寫</u>、<u>心理操控</u>、<u>病態愛戀</u>、<br><u>心理博弈</u>與<u>心智角力</u>，適合心理成熟之讀者。</p>
+      </div>
+      <p>　</p>
+      <p class="ds">本作品純屬虛構，與現實人物、事件、團體皆無關聯。</p>
+      <p class="ds">【如有雷同・純屬巧合】</p>
+      <div class="intro-box">
+        <div class="intro">
+          <h2>作品資訊</h2>
+          <p>　</p>
+          <p>作者：<span class="author-name">默黓</span></p>
+          <p>類型：<span class="tag">成人向</span>、現代、愛情、懸疑、<span class="tag">心理驚悚</span></p>
+          <p>狀態：連載中</p>
+        </div>
+      </div>
+      <p class="text">完整內容請移駕至<a href="https://cxc.today/@moi_chu/work/51778" rel="noreferrer nofollow" target="_blank" title="《謊言與囚籠——情報是毒，愛亦如是》">CxC</a>平台閱讀</p>
+    </main>
+
+  <div class="home-btn"><a href="./index.html" title="回首頁">◀ Home</a></div>
+  
+  <audio id="music" src="../audio/garasugoshinoyutsu.mp3" loop></audio>
+  <div class="floating-player">
+    <button id="play-btn" class="glass-btn">🎵</button>
+  </div>
+
+  <footer>
+    Copyright 2026 © <a href="https://moichuu.github.io/" rel="noopener" target="_blank" title="默黓的記憶櫥窗">默黓的記憶櫥窗</a><sup><span style='font-size:70%;'>TM</span></sup>. All Rights Reserved. Made with by <a href="mailto:moiaurachu@gmail.com" rel="nofollow" target="_blank" title="寄信給我">默黓Moi</a> ♥<br><a href="https://moichuu.github.io/copyright.html" rel="noopener" target="_blank" title="版權宣告">版權宣告</a>｜<a href="https://moichuu.github.io/disclaimer.html" rel="noopener" target="_blank" title="免責聲明">免責聲明</a>
+  </footer>
+
+  <script src="./js/main-novel.js" defer></script>
+  <script src="./js/player-btn.js"></script>
+</body>
+</html>
