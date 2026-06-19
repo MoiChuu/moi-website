@@ -60,10 +60,17 @@ document.addEventListener('copy', function(e) {
         const copyrightTail = 
 `
 
-默黓的記憶櫥窗
-【默黓版權所有｜轉載請註明出處】
-作者網址：${window.location.href}
-注意：私自偷取文字的人，電腦資料會被洛奇給看光～光唷 (ﾟ∀ﾟ)！`;
+私自偷取文字的人，電腦資料會被洛奇給看光～光唷 (ﾟ∀ﾟ)
+
+出處：
+${document.title}
+${window.location.href}
+
+作者名稱：默黓
+作者主站：默黓的記憶櫥窗
+${window.location.origin}
+
+【默黓版權所有｜轉載請註明出處】`;
 
         // 整合原本的文字與版權尾巴，強制塞進使用者的剪貼簿
         e.clipboardData.setData('text/plain', selectedText + copyrightTail);
