@@ -2,19 +2,36 @@
 
 /* 定義基礎樣式 */
 body {
-    padding: 20px;
-    line-height: 2;
-    font-size: 18px;
-    cursor: url('../images/Moi-Cursor-1.png'), auto;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
+  padding: 20px;
+  line-height: 2;
+  font-size: 18px;
+  cursor: url('../images/Moi-Cursor-1.png'), auto;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-main { padding-bottom: 60px; }
+main {
+  padding-bottom: 60px;
+  max-width: 800px;
+  margin: 0 auto 100px;
+  padding: 0 30px;
+}
 
-/* 手機版縮小字體 */
+/* 手機版專用 */
+@media(max-width:768px){
+  main {
+    padding:0 20px;
+  }
+}
+
+@media (max-width:768px){
+  header {
+    padding: 25px;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 14px;
@@ -28,20 +45,20 @@ main { padding-bottom: 60px; }
 }
 
 a {
-    text-decoration: none;
-    border-radius: 10px;
-    transition-duration: 0.6s;
-    -o-transition-duration: 0.6s;
-    -moz-transition-duration: 0.6s;
-    -webkit-transition-duration: 0.6s;
+  text-decoration: none;
+  border-radius: 10px;
+  transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
 }
 
 a:hover {
-    text-decoration: none;
-    cursor: url('../images/Moi-Cursor-2.png'), auto;
-    border-radius: 10px; 
-    transition-duration: 0.6s;
-    -o-transition-duration: 0.6s;
-    -moz-transition-duration: 0.6s;
-    -webkit-transition-duration: 0.6s;
+  text-decoration: none;
+  cursor: url('../images/Moi-Cursor-2.png'), auto;
+  border-radius: 10px; 
+  transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -moz-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
 }
