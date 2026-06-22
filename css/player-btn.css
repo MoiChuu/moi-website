@@ -17,6 +17,8 @@
   cursor: url('../images/Moi-Cursor-3.png'), auto;
 }
 
+.glass-btn:hover { cursor: url('../images/Moi-Cursor-3.png'), auto; }
+
 /* 浮動播放器位置 */
 .floating-player {
   position: fixed;

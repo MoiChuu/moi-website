@@ -12,6 +12,8 @@ body {
     padding: 0 20px;
 }
 
+main { padding-bottom: 60px; }
+
 /* 手機版縮小字體 */
 @media (max-width: 768px) {
   html {

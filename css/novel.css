@@ -7,10 +7,15 @@
 
 /* 定義小說頁面樣式 */
 body {
-    font-family: '源起明體 月', 'Noto Serif TC', 'Times New Roman', serif;
-    font-weight: 400;
-    color: #a5a5a5;
+    padding: 20px;
+    line-height: 2;
+    font-size: 18px;
     cursor: url('../images/Moi-Cursor-1.png'), auto;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #a5a5a5;
     background:
         linear-gradient(
         135deg,
@@ -18,9 +23,9 @@ body {
         #121418,
         #08090b
         );
-    line-height: 2.4;
+    font-family: '源起明體 月', 'Noto Serif TC', 'Times New Roman', serif;
+    font-weight: 400;
     font-size: 18px;
-    letter-spacing: 0.12em;
 }
 
 body::before {
@@ -31,26 +36,54 @@ body::before {
     background-image: radial-gradient(rgba(255, 255, 255, .03) 1px, transparent 1px);
     background-size: 4px 4px;
     opacity: .25;
-    }
+}
 
-html {
-    scrollbar-face-color: #0b0b0d;
-    scrollbar-3dlight-color: #0b0b0d;
-    scrollbar-track-color: #0b0b0d;
-    scrollbar-darkshadow-color: #0b0b0d;
-    scrollbar-highlight-color: #000000;
-    scrollbar-shadow-color: #000000;
-    scrollbar-arrow-color: #000000;
-    }
+main {
+    padding-bottom: 60px;
+    line-height: 2;
+    letter-spacing: 0.08em;
+}
 
-::-webkit-scrollbar {width: 5px; height: 0px;}
-::-webkit-scrollbar-track, 
-::-webkit-scrollbar-button, 
-::-webkit-scrollbar-corner {background-color: #0b0b0d;}
-::-webkit-scrollbar-button, 
-::-webkit-scrollbar-corner {width: 0px;}
-::-webkit-scrollbar-thumb {background-color: #a59bbb; border-radius: 10px 0 0 10px;}
-::-webkit-scrollbar-thumb:hover {background-color: #FFF;}
+header {
+    text-align: center;
+    max-width: 800px;
+    margin: 80px auto;
+    background: rgba(20, 20, 30, .35);
+    backdrop-filter: blur(12px);
+    padding: 50px;
+    border-radius: 24px;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+header h1 {
+    color: #d8d8d8;
+    text-shadow: 0 0 10px rgba(255, 255, 255, .08);
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+}
+
+header i {
+    color: #999;
+    font-size: 14px;
+    opacity: .6;
+    line-height: 1.8;
+    letter-spacing: 0.08em;
+}
+
+/* 手機版縮小字體 */
+@media (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+      font-size: 13px;
+    }
+}
 
 a {
     color: #FFF;
@@ -71,30 +104,25 @@ a:hover {
     -webkit-transition-duration: 0.6s;
 }
 
-header {
-    text-align: center;
-    max-width: 800px;
-    margin: 80px auto;
-    background: rgba(20, 20, 30, .35);
-    backdrop-filter: blur(12px);
-    padding: 50px;
-    border-radius: 24px;
-    border-top: 1px solid rgba(255, 255, 255, .08);
-    border-bottom: 1px solid rgba(255, 255, 255, .08);
-}
-
-header i {
-    color: #999;
-    font-size: 14px;
-    opacity: .6;
-}
-
-h1 {
-    color: #d8d8d8;
-    text-shadow: 0 0 10px rgba(255, 255, 255, .08);
-    font-weight: 700;
-}
-
 p.center {
     text-align: center;
 }
+
+html {
+    scrollbar-face-color: #0b0b0d;
+    scrollbar-3dlight-color: #0b0b0d;
+    scrollbar-track-color: #0b0b0d;
+    scrollbar-darkshadow-color: #0b0b0d;
+    scrollbar-highlight-color: #000000;
+    scrollbar-shadow-color: #000000;
+    scrollbar-arrow-color: #000000; 
+}
+
+::-webkit-scrollbar {width: 5px; height: 0px;}
+::-webkit-scrollbar-track, 
+::-webkit-scrollbar-button, 
+::-webkit-scrollbar-corner {background-color: #0b0b0d;}
+::-webkit-scrollbar-button, 
+::-webkit-scrollbar-corner {height: 0px;}
+::-webkit-scrollbar-thumb {background-color: #a59bbb; border-radius: 10px 0 0 10px;}
+::-webkit-scrollbar-thumb:hover {background-color: #FFF;}
