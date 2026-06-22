@@ -75,7 +75,7 @@ header i {
 /* 手機版專用 */
 @media(max-width:768px){
     main {
-      padding: 0 20px 200px;
+      padding: 0 20px 140px;
     }
 }
 
