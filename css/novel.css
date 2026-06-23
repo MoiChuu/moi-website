@@ -73,13 +73,13 @@ header i {
 }
 
 /* 手機版專用 */
-@media(max-width:768px){
+@media(max-width:768px) {
     main {
       padding: 0 20px 140px;
     }
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     header {
       padding: 25px;
     }
