@@ -121,10 +121,10 @@ p.center {
 }
 
 html {
-    scrollbar-face-color: #0b0b0d;
-    scrollbar-3dlight-color: #0b0b0d;
-    scrollbar-track-color: #0b0b0d;
-    scrollbar-darkshadow-color: #0b0b0d;
+    scrollbar-face-color: #121418;
+    scrollbar-3dlight-color: #121418;
+    scrollbar-track-color: #121418;
+    scrollbar-darkshadow-color: #121418;
     scrollbar-highlight-color: #000000;
     scrollbar-shadow-color: #000000;
     scrollbar-arrow-color: #000000; 
@@ -133,7 +133,7 @@ html {
 ::-webkit-scrollbar {width: 5px; height: 0px;}
 ::-webkit-scrollbar-track, 
 ::-webkit-scrollbar-button, 
-::-webkit-scrollbar-corner {background-color: #0b0b0d;}
+::-webkit-scrollbar-corner {background-color: #121418;}
 ::-webkit-scrollbar-button, 
 ::-webkit-scrollbar-corner {height: 0px;}
 ::-webkit-scrollbar-thumb {background-color: #a59bbb; border-radius: 10px 0 0 10px;}
