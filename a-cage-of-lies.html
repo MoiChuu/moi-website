@@ -163,6 +163,28 @@
       color: #FFF;
       text-align: center;
     }
+
+    /* 連載日期 */
+    .counter {
+      text-align: center;
+    }
+
+    #days {
+      color: #a59bbb;
+      transition-duration: 0.6s;
+      -o-transition-duration: 0.6s;
+      -moz-transition-duration: 0.6s;
+      -webkit-transition-duration: 0.6s;
+    }
+
+    #days:hover {
+      color: #000;
+      text-shadow: 0 0 0.2em #FFF, 0 0 0.2em #FFF, 0 0 0.2em #FFF;
+      transition-duration: 0.6s;
+      -o-transition-duration: 0.6s;
+      -moz-transition-duration: 0.6s;
+      -webkit-transition-duration: 0.6s;
+    }
   </style>
 </head>
 
@@ -204,7 +226,8 @@
           <p>　</p>
           <p>作者：<span class="author-name">默黓</span></p>
           <p>類型：<span class="tag">成人向</span>、現代、愛情、懸疑、<span class="tag">心理驚悚</span></p>
-          <p>狀態：連載中</p>
+          <p>　</p>
+          <div class="counter"><h3 id="title"></h3><div id="days">0</div></div>
         </div>
       </div>
       <p class="text">完整內容請移駕至<a href="https://cxc.today/@moi_chu/work/51778" rel="noreferrer nofollow" target="_blank" title="《謊言與囚籠——情報是毒，愛亦如是》">CxC平台</a>閱讀</p>
@@ -227,6 +250,7 @@
   </footer>
 
   <script src="./js/main-novel.js" defer></script>
+  <script src="./js/a-cage-of-lies-date.js"></script>
   <script src="./js/player-btn.js"></script>
 </body>
 </html>
